@@ -74,20 +74,20 @@ const About = () => {
         </div>
         <div className="flex flex-wrap max-md:gap-6 items-center justify-between mt-12">
             <div>
-                <h2 className="text-black text-4xl md:text-6xl syne mb-2 text-center">150+</h2>
+                <h2 className="text-black text-4xl md:text-6xl syne mb-2 text-center">50+</h2>
                 <p className="text-black/70 text-center">Projects Completed</p>
             </div>
             <div>
-                <h2 className="text-black text-4xl md:text-6xl syne mb-2 text-center">50+</h2>
-                <p className="text-black/70 text-center">Happy Clients</p>
+                <h2 className="text-black text-4xl md:text-6xl syne mb-2 text-center">6+</h2>
+                <p className="text-black/70 text-center">Core Technologies</p>
             </div>
             <div>
-                <h2 className="text-black text-4xl md:text-6xl syne mb-2 text-center">10+</h2>
-                <p className="text-black/70 text-center">Awards Won</p>
+                <h2 className="text-black text-4xl md:text-6xl syne mb-2 text-center">20+</h2>
+                <p className="text-black/70 text-center">UI Animations</p>
             </div>
             <div>
-                <h2 className="text-black text-4xl md:text-6xl syne mb-2 text-center">5+</h2>
-                <p className="text-black/70 text-center">Years Experience</p>
+                <h2 className="text-black text-4xl md:text-6xl syne mb-2 text-center">100%</h2>
+                <p className="text-black/70 text-center">Learning Driven</p>
             </div>
         </div>
     </section>

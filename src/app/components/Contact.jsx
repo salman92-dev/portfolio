@@ -10,7 +10,7 @@ const Contact = () => {
                 </p>
                 <a 
                     href="mailto:salman@example.com"
-                    className="inline-block px-8 py-4 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition-colors duration-300"
+                    className="inline-block px-8 text-2xl syne py-5 bg-[#ddf160] text-black rounded-full font-medium transition-colors duration-300"
                 >
                     Get in Touch
                 </a>

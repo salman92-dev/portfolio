@@ -9,10 +9,12 @@ import Projects from "./components/Projects";
 import ScrollToTop from "./components/ScrolltoTop";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/whatsapp";
 export default function Home() {
   return (
     <div>
       <ScrollToTop />
+      <WhatsAppButton />
       <Navbar />
       <Hero />
       <Advertise />

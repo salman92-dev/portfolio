@@ -4,10 +4,11 @@ import Navbar from "../components/Navbar2";
 import Footer from "../components/Footer";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
-import Input from "../components/Input";
 import ParallyxImg from "./parallyximg";
 import FastMarquee from "../components/marquee";
 import ContactForProject from "./contacForProject";
+import ContactForm from "./Contact-form";
+import ScrollToTop from "../components/ScrolltoTop";
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   show: (i = 1) => ({
@@ -21,7 +22,7 @@ const ContactPage = () => {
   return (
     <>
       <Navbar />
-
+        <ScrollToTop />
       <motion.section
         id="contact"
         initial="hidden"
@@ -63,41 +64,7 @@ const ContactPage = () => {
         </div>
 
         {/* Form */}
-        <motion.div
-          variants={fadeUp}
-          custom={4}
-          className="max-w-4xl mx-auto mt-12"
-        >
-          <form className="flex flex-col gap-8">
-            {/* Inputs */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <Input placeholder="Your Name" />
-              <Input placeholder="Company Name" />
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <Input type="email" placeholder="Email" />
-              <Input type="tel" placeholder="Phone" />
-            </div>
-
-            <textarea
-              placeholder="A few words about the project..."
-              rows={5}
-              className="text-black text-xl syne py-4 bg-transparent border-b-2 border-black/40 focus:border-black transition-all focus:outline-none"
-            />
-
-            {/* Submit */}
-            <motion.button
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.96 }}
-              type="submit"
-              className="syne text-xl w-fit px-12 py-4 bg-black text-white rounded-full 
-                         hover:bg-white hover:text-black border border-black transition-all"
-            >
-              Submit
-            </motion.button>
-          </form>
-        </motion.div>
+        <ContactForm />
       </motion.section>
       <ParallyxImg />
       <FastMarquee 

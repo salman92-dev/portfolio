@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function FeaturesSection() {
   return (
-    <section className="2xl:container mx-auto py-24 overflow-hidden">
+    <section className="2xl:container mx-auto pt-0 py-8 md:py-20 overflow-hidden">
       <div className="flex flex-col md:flex-row px-6 md:px-10 items-center max-md:gap-12">
 
         {/* LEFT CONTENT */}
@@ -55,7 +55,7 @@ export default function FeaturesSection() {
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
           >
             <Image
-              src="/images/features.webp"
+              src="/images/features.png"
               alt="Tablet"
               width={800}
               height={600}

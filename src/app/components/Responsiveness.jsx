@@ -149,7 +149,7 @@ const Responsiveness = () => {
             >
                 <div className="relative overflow-hidden rounded-xl">
                     <img 
-                        src="/images/responsiveness.webp" 
+                        src="/images/responsiveness2.png" 
                         alt="Responsiveness Illustration" 
                         className="w-full h-auto rounded-xl"
                         style={{

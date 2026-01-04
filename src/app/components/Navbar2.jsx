@@ -68,14 +68,18 @@ export default function Navbar() {
           </nav>
 
           {/* CTA */}
-          <motion.a
-            href="#contact"
-            className="hidden md:inline-flex px-10 py-2.5 rounded-full border-2 border-black text-black text-lg hover:bg-black hover:text-white transition-all"
+            <motion.a
+            href="https://wa.me/923241161920?text=Hello%20Salman%2C%20I%20would%20like%20to%20discuss%20a%20project"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-flex px-10 py-2.5 rounded-full border-2 border-black 
+                        text-black text-lg hover:bg-black hover:text-white transition-all"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
-          >
+            >
             Let’s Talk
-          </motion.a>
+            </motion.a>
+
 
           {/* MOBILE BUTTON */}
           <motion.button

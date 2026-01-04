@@ -7,27 +7,27 @@ const projects = [
   {
     title: "E-commerce Platform",
     category: "Web App",
-    image: "/projects/project-1.jpg",
+    image: "/images/ecommerce.png",
   },
   {
     title: "SaaS Dashboard",
     category: "UI / UX",
-    image: "/projects/project-2.jpg",
+    image: "/images/saas.png",
+  },
+  {
+    title: "E-commerce Platform",
+    category: "Web App",
+    image: "/images/ecommerce.png",
   },
   {
     title: "Landing Page",
     category: "Marketing",
-    image: "/projects/project-3.jpg",
+    image: "/images/landing-page.png",
   },
   {
-    title: "Mobile App",
-    category: "React Native",
-    image: "/projects/project-4.jpg",
-  },
-  {
-    title: "Mobile App",
-    category: "React Native",
-    image: "/projects/project-4.jpg",
+    title: "SaaS Dashboard",
+    category: "UI / UX",
+    image: "/images/saas.png",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function ProjectMarquee() {
           className="mt-12 mx-4 w-[300px] group cursor-pointer"
         >
           {/* Card */}
-          <div className="relative overflow-hidden rounded-2xl bg-black">
+          <div className="relative overflow-hidden rounded-2xl">
             <Image
               src={project.image}
               alt={project.title}
@@ -56,17 +56,7 @@ export default function ProjectMarquee() {
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </div>
-
-          {/* Text */}
-          <div className="mt-4">
-            <h3 className="text-lg font-semibold text-black">
-              {project.title}
-            </h3>
-            <p className="text-sm text-black/50">
-              {project.category}
-            </p>
+            {/* <div className="absolute inset-0 bg-/4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" /> */}
           </div>
         </div>
       ))}

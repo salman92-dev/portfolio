@@ -155,7 +155,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.4 }}
         >
-          Elevate your digital presence with Rayo - dynamic and stylish template designed for creative agencies and personal brands.
+          Elevate your digital presence with me - dynamic and stylish template designed for creative agencies and personal brands.
         </motion.p>
         {/* CTA Buttons */}
         <motion.div

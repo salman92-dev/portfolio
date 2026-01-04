@@ -64,8 +64,8 @@ export default function Footer() {
           variants={item}
           className="rounded-3xl flex flex-col gap-6"
         >
-          <ContactCard text="hello@rayostudio.com" />
-          <ContactCard text="+1 212-708-9400" />
+          <ContactCard text="sa0587676@gmail.com" />
+          <ContactCard text="+92 3241161920" />
 
           <div className="bg-white rounded-2xl p-6 mt-auto">
             <h3 className="text-2xl md:text-4xl text-black syne mb-18">

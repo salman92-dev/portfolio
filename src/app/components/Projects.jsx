@@ -1,4 +1,7 @@
+"use client";
 import ProjectMarquee from "./ProjectMarquee";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -6,6 +9,22 @@ const Projects = () => {
       id="projects"
       className="2xl:container mx-auto px-6 md:px-10 relative overflow-hidden bg-white py-8 md:py-12"
     >
+         <motion.div
+      className="absolute w-40 md:w-58 right-0 md:right-12 md:top-4"
+      animate={{ rotate: 360 }}
+      transition={{
+        repeat: Infinity,
+        duration: 4, // speed (lower = faster)
+        ease: "linear",
+      }}
+    >
+      <Image
+        src="/images/wood-star2.png"
+        alt="Projects"
+        width={800}
+        height={600}
+      />
+    </motion.div>
       {/* Dotted Background */}
       <div className="absolute inset-0 bg-[radial-gradient(#000_4px,transparent_1px)] [background-size:24px_24px] opacity-[0.04]" />
 
