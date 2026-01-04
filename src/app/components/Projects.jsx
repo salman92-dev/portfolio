@@ -1,0 +1,35 @@
+import ProjectMarquee from "./ProjectMarquee";
+
+const Projects = () => {
+  return (
+    <section
+      id="projects"
+      className="2xl:container mx-auto px-6 md:px-10 relative overflow-hidden bg-white py-8 md:py-12"
+    >
+      {/* Dotted Background */}
+      <div className="absolute inset-0 bg-[radial-gradient(#000_4px,transparent_1px)] [background-size:24px_24px] opacity-[0.04]" />
+
+      {/* Container */}
+      <div className="relative z-10 px-4">
+        
+        {/* Heading */}
+        <h2 className="relative inline-block text-4xl md:text-6xl font-semibold syne text-black text-center mx-auto">
+          Projects
+        </h2>
+
+        {/* Frame */}
+        <div className="relative mt-20 border border-black/10 rounded-3xl py-6 md:py-10">
+          
+          {/* Corner accents */}
+          <span className="absolute -top-3 -left-3 w-6 h-6 border-l-2 border-t-2 border-black" />
+          <span className="absolute -bottom-3 -right-3 w-6 h-6 border-r-2 border-b-2 border-black" />
+
+          {/* Marquee */}
+          <ProjectMarquee />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

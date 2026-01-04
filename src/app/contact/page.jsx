@@ -1,0 +1,118 @@
+"use client";
+
+import Navbar from "../components/Navbar2";
+import Footer from "../components/Footer";
+import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
+import Input from "../components/Input";
+import ParallyxImg from "./parallyximg";
+import FastMarquee from "../components/marquee";
+import ContactForProject from "./contacForProject";
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  show: (i = 1) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: 0.1 * i, duration: 0.6, ease: "easeOut" },
+  }),
+};
+
+const ContactPage = () => {
+  return (
+    <>
+      <Navbar />
+
+      <motion.section
+        id="contact"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="2xl:container mx-auto px-6 md:px-10 pt-30 pb-12 md:pt-30 md:pb-16"
+      >
+        {/* Heading */}
+        <div className="max-w-4xl mx-auto">
+          <motion.h2
+            variants={fadeUp}
+            className="!leading-[120%] text-6xl md:text-8xl font-semibold syne text-black mb-6"
+          >
+            {`Let's`} talk <br />about your<br /> project!
+          </motion.h2>
+
+          {/* Email */}
+          <motion.a
+            variants={fadeUp}
+            custom={2}
+            href="mailto:hello@salman.com"
+            className="group inline-flex items-center gap-3 text-3xl md:text-8xl text-gray-400 hover:text-[#9f8be7] transition-colors"
+          >
+            hello@salman.com
+            <ArrowUpRight className="size-8 md:size-28 transition-transform duration-300 group-hover:rotate-45" />
+          </motion.a>
+
+          {/* Description */}
+          <motion.p
+            variants={fadeUp}
+            custom={3}
+            className="text-xl md:text-2xl !leading-[160%] mt-8 text-black mb-12"
+          >
+            Have questions? {`We've`} got the answers! Here, {`you'll`} find
+            clear and concise information about our services, process, and what
+            to expect when working with us. If you need more details, feel free
+            to reach out!
+          </motion.p>
+        </div>
+
+        {/* Form */}
+        <motion.div
+          variants={fadeUp}
+          custom={4}
+          className="max-w-4xl mx-auto mt-12"
+        >
+          <form className="flex flex-col gap-8">
+            {/* Inputs */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <Input placeholder="Your Name" />
+              <Input placeholder="Company Name" />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <Input type="email" placeholder="Email" />
+              <Input type="tel" placeholder="Phone" />
+            </div>
+
+            <textarea
+              placeholder="A few words about the project..."
+              rows={5}
+              className="text-black text-xl syne py-4 bg-transparent border-b-2 border-black/40 focus:border-black transition-all focus:outline-none"
+            />
+
+            {/* Submit */}
+            <motion.button
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.96 }}
+              type="submit"
+              className="syne text-xl w-fit px-12 py-4 bg-black text-white rounded-full 
+                         hover:bg-white hover:text-black border border-black transition-all"
+            >
+              Submit
+            </motion.button>
+          </form>
+        </motion.div>
+      </motion.section>
+      <ParallyxImg />
+      <FastMarquee 
+      items={[
+        "✦ Web Design",
+        "✦ UI/UX", 
+        "✦ Branding", 
+        "✦ Illustration", 
+        "✦ Animation", 
+        "✦ E-commerce", 
+        ]}  speed={150} direction="right"  className='overflow-hidden text-black/60 hover:text-[#9f8be7] text-4xl md:text-8xl border-b-1 border-[#9c9c9c] py-12 border-t-1 syne  my-12 '/>
+        <ContactForProject />
+      <Footer />
+    </>
+  );
+};
+
+export default ContactPage;
