@@ -113,7 +113,7 @@ export default function Navbar() {
                 <motion.a
                   key={item.label}
                   href={item.href}
-                  className="text-4xl font-bold text-black"
+                  className="text-4xl syne font-bold text-black"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.08 }}
