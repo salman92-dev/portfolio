@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { MessageCircle } from "lucide-react";
-
+import Image from "next/image";
 const messages = [
   "Hi, I want to discuss a project 🚀",
   "Hello! I need a website 💻",
@@ -43,9 +43,15 @@ const WhatsAppButton = () => {
       {/* Main Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg hover:scale-110 transition"
+        className="w-12 h-12 cursor-pointer rounded-full  text-white flex items-center justify-center shadow-lg hover:scale-110 transition"
       >
-        <MessageCircle size={26} />
+        <Image
+          src="/images/whatsapp.svg"
+          alt="WhatsApp"
+          width={24}
+          height={24}
+          className="w-full"
+        />
       </button>
     </div>
   );
