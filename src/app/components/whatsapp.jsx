@@ -4,10 +4,10 @@ import { useState } from "react";
 import { MessageCircle } from "lucide-react";
 import Image from "next/image";
 const messages = [
-  "Hi, I want to discuss a project 🚀",
-  "Hello! I need a website 💻",
-  "Hey, can you help with UI/UX design 🎨",
-  "Hi, I’d like a quote for my idea 💡",
+  "Hi, I want to discuss a project ",
+  "Hello! I need a website ",
+  "Hey, can you help with UI/UX design ",
+  "Hi, I’d like a quote for my idea ",
 ];
 
 const PHONE_NUMBER = "923241161920"; // without +
@@ -32,7 +32,7 @@ const WhatsAppButton = () => {
             <button
               key={i}
               onClick={() => handleSend(msg)}
-              className="text-left px-4 py-2 rounded-xl text-sm text-black hover:bg-black hover:text-white transition"
+              className="text-left px-4 py-2 rounded-lg text-sm text-black hover:bg-black hover:text-white transition"
             >
               {msg}
             </button>
