@@ -110,10 +110,10 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-black font-display font-bold leading-none">
+            <span className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-black syne leading-none">
               Make
             </span>
-            <FastMarquee items={marqueeItems} speed={250} direction="left" className='max-sm:rotate-[-3deg] overflow-hidden max-w-3xl text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white rounded-full leading-none px-4 md:px-8 py-2 text-background bg-[#9f8be7] ' />
+            <FastMarquee items={marqueeItems} speed={250} direction="left" className='max-sm:rotate-[-3deg] overflow-hidden max-w-3xl text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white rounded-full leading-none syne px-4 md:px-8 py-2 text-background bg-[#9f8be7] ' />
           </motion.div>
 
           {/* Line 2: ✦ stand out */}
@@ -142,7 +142,7 @@ const Hero = () => {
               />
             </motion.svg>
             
-            <span className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-black font-display font-bold italic leading-none">
+            <span className="text-[13.5vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-black syne leading-none">
               stand out
             </span>
           </motion.div>
@@ -150,7 +150,7 @@ const Hero = () => {
 
         {/* Subtitle */}
         <motion.p
-          className="mt-12 md:mt-16 text-xl md:text-lg lg:text-4xl text-[#6d6d78] max-w-5xl mx-auto syne leading-relaxed"
+          className="mt-12 md:mt-16 text-xl md:text-lg lg:text-4xl text-[#6d6d78] max-w-5xl mx-auto funnel leading-relaxed"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.4 }}
