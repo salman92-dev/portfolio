@@ -4,7 +4,9 @@
   font-family: syne;
   src: url(/fonts/syne/Syne-Bold.otf);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .syne {
   font-family: syne, sans-serif;
 }

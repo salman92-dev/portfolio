@@ -34,7 +34,7 @@ const ContactPage = () => {
         <div className="max-w-4xl mx-auto">
           <motion.h2
             variants={fadeUp}
-            className="!leading-[120%] text-6xl md:text-8xl font-semibold syne text-black mb-6"
+            className="!leading-[110%] text-6xl md:text-8xl font-semibold syne text-black mb-4"
           >
             {`Let's`} talk <br />about your<br /> project!
           </motion.h2>
@@ -43,10 +43,10 @@ const ContactPage = () => {
           <motion.a
             variants={fadeUp}
             custom={2}
-            href="mailto:hello@salman.com"
-            className="group inline-flex items-center gap-3 text-3xl md:text-8xl text-gray-400 hover:text-[#9f8be7] transition-colors"
+            href="contact@salman-tech.online"
+            className="group inline-flex items-center gap-3 text-3xl md:text-6xl text-gray-400 hover:text-[#9f8be7] transition-colors"
           >
-            hello@salman.com
+            contact@salman-tech.online
             <ArrowUpRight className="size-8 md:size-28 transition-transform duration-300 group-hover:rotate-45" />
           </motion.a>
 

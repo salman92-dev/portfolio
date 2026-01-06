@@ -19,12 +19,12 @@ const item = {
 export default function Footer() {
   return (
     <footer className="2xl:container mx-auto px-6 py-10 rounded-3xl">
-        <motion.h3 className="text-center text-[15vw] 2xl:text-[15rem] syne text-black !leading-[100%] mb-8"
+        <motion.h3 className="text-center text-[17.5vw] md:text-[18.5vw] 2xl:text-[18rem] syne text-black !leading-[100%] mb-8"
         initial={{ opacity: 0, scale: 0.8, backdropFilter: 'blur(15px)' }}
         whileInView={{ opacity: 1, scale: 1, backdropFilter: 'blur(0px)' }}
         transition={{ duration: 1.5, ease: "easeOut" }}
         >
-            rayostudio
+            SALMAN
         </motion.h3>
       <motion.div
         variants={container}
@@ -64,7 +64,7 @@ export default function Footer() {
           variants={item}
           className="rounded-3xl flex flex-col gap-6"
         >
-          <ContactCard text="sa0587676@gmail.com" />
+          <ContactCard text="contact@salman-tech.online" />
           <ContactCard text="+92 3241161920" />
 
           <div className="bg-white rounded-2xl p-6 mt-auto">

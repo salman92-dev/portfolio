@@ -6,7 +6,7 @@ import Image from "next/image";
 const Projects = () => {
   return (
     <section
-      id="projects"
+      id="work"
       className="2xl:container mx-auto px-6 md:px-10 relative overflow-hidden bg-white py-8 md:py-12"
     >
          <motion.div

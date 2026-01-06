@@ -40,14 +40,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between px-4 md:px-8">
           {/* LOGO */}
           <motion.a
-            href="#"
+            href="/"
             className="flex items-center gap-3"
             whileHover={{ scale: 1.03 }}
           >
             <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center">
-              <span className="text-white font-bold text-xl">S</span>
+              <span className="text-white font-bold text-xl syne">S</span>
             </div>
-            <span className="font-bold text-xl text-black">salman</span>
+            <span className="font-bold text-xl text-black syne">salman</span>
           </motion.a>
 
           {/* DESKTOP NAV */}
