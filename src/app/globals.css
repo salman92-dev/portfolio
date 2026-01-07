@@ -10,6 +10,13 @@ html {
 .syne {
   font-family: syne, sans-serif;
 }
+@font-face {
+  font-family: funnel-display;
+  src: url(/fonts/funnel-display/FunnelDisplay[wght].ttf);
+}
+.funnel {
+  font-family: funnel-display, sans-serif;
+}
 :root {
   --background: #ffffff;
   --foreground: #faf7f6;
