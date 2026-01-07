@@ -34,7 +34,7 @@ const ContactPage = () => {
         <div className="max-w-4xl mx-auto">
           <motion.h2
             variants={fadeUp}
-            className="!leading-[110%] text-6xl md:text-8xl font-semibold syne text-black mb-4"
+            className="!leading-[110%] text-5xl md:text-8xl font-semibold syne text-black mb-4"
           >
             {`Let's`} talk <br />about your<br /> project!
           </motion.h2>
@@ -44,7 +44,7 @@ const ContactPage = () => {
             variants={fadeUp}
             custom={2}
             href="contact@salman-tech.online"
-            className="group inline-flex items-center gap-3 text-3xl md:text-6xl text-gray-400 hover:text-[#9f8be7] transition-colors"
+            className="group inline-flex items-center gap-3 text-2xl md:text-6xl text-gray-400 hover:text-[#9f8be7] transition-colors"
           >
             contact@salman-tech.online
             <ArrowUpRight className="size-8 md:size-28 transition-transform duration-300 group-hover:rotate-45" />
@@ -54,7 +54,7 @@ const ContactPage = () => {
           <motion.p
             variants={fadeUp}
             custom={3}
-            className="text-xl md:text-2xl !leading-[160%] mt-8 text-black mb-12"
+            className="text-xl md:text-2xl !leading-[160%] funnel mt-8 text-black mb-12"
           >
             Have questions? {`We've`} got the answers! Here, {`you'll`} find
             clear and concise information about our services, process, and what

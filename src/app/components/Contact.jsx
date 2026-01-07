@@ -5,7 +5,7 @@ const Contact = () => {
                 <h2 className="text-4xl md:text-6xl font-semibold syne text-black mb-6">
                     {`Let's`} Work Together
                 </h2>
-                <p className="text-lg md:text-xl text-black/70 mb-12">
+                <p className="text-lg md:text-xl syne text-black/70 mb-12">
                     {`I'm`} always excited to collaborate on new projects or discuss potential opportunities. Whether you have a question, a project idea, or just want to say hello, feel free to reach out!
                 </p>
                 <a 

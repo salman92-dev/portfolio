@@ -4,18 +4,18 @@
   font-family: syne;
   src: url(/fonts/syne/Syne-Bold.otf);
 }
-html {
-  scroll-behavior: smooth;
-}
-.syne {
-  font-family: syne, sans-serif;
-}
 @font-face {
   font-family: funnel-display;
   src: url(/fonts/funnel-display/FunnelDisplay[wght].ttf);
 }
 .funnel {
   font-family: funnel-display, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.syne {
+  font-family: syne, sans-serif;
 }
 :root {
   --background: #ffffff;
