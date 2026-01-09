@@ -22,7 +22,7 @@ const Hero = () => {
   const y1 = useTransform(scrollYProgress, [0, 1], [0, -150]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -250]);
 //   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.9]);
+  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
 
   return (
     <section ref={containerRef} className="relative flex items-center justify-center overflow-hidden pt-50 md:pt-60">

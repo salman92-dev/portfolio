@@ -23,6 +23,7 @@ const ContactForm = () => {
 
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -39,7 +40,9 @@ const ContactForm = () => {
     });
 
     setLoading(false);
-
+    if(!res.ok){
+      setError(true);
+    }
     if (res.ok) {
       setSuccess(true);
       setFormData({
@@ -93,6 +96,11 @@ const ContactForm = () => {
         {success && (
           <p className="text-green-600 text-lg syne">
             Message sent successfully 🚀
+          </p>
+        )}
+        {error && (
+          <p className="text-red-600 text-lg syne">
+            Message could not sent.⚠️
           </p>
         )}
       </form>

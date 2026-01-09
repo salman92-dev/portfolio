@@ -1,5 +1,4 @@
 "use client";
-
 import Navbar from "../components/Navbar2";
 import Footer from "../components/Footer";
 import { ArrowUpRight } from "lucide-react";
@@ -9,6 +8,7 @@ import FastMarquee from "../components/marquee";
 import ContactForProject from "./contacForProject";
 import ContactForm from "./Contact-form";
 import ScrollToTop from "../components/ScrolltoTop";
+import CircularText from "../components/circle2";
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   show: (i = 1) => ({
@@ -43,7 +43,7 @@ const ContactPage = () => {
           <motion.a
             variants={fadeUp}
             custom={2}
-            href="contact@salman-tech.online"
+            href="mailto:contact@salman-tech.online"
             className="group inline-flex items-center gap-3 text-2xl md:text-6xl text-gray-400 hover:text-[#9f8be7] transition-colors"
           >
             contact@salman-tech.online
