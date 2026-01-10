@@ -115,8 +115,8 @@ export default function Navbar() {
                   key={item.label}
                   href={item.href}
                   className="text-4xl syne font-bold text-black"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, y: 20,rotate:10 }}
+                  animate={{ opacity: 1, y: 0,rotate:0 }}
                   transition={{ delay: i * 0.08 }}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

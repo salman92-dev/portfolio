@@ -17,6 +17,7 @@ export default function Testimonials() {
         <Swiper
           modules={[Navigation]}
           spaceBetween={32}
+          loop="true"
           navigation={{
             nextEl: ".next-btn",
             prevEl: ".prev-btn",
