@@ -43,10 +43,10 @@ const ContactPage = () => {
           <motion.a
             variants={fadeUp}
             custom={2}
-            href="mailto:contact@salman-tech.online"
+            href="mailto:contact@salmanlabs.online"
             className="group inline-flex items-center gap-3 text-2xl md:text-6xl text-gray-400 hover:text-[#9f8be7] transition-colors"
           >
-            contact@salman-tech.online
+            contact@salmanlabs.online
             <ArrowUpRight className="size-8 md:size-28 transition-transform duration-300 group-hover:rotate-45" />
           </motion.a>
 

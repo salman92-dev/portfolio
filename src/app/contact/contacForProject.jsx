@@ -91,10 +91,10 @@ const ContactForProject = () => {
 
       {/* Button */}
       <motion.button
-        whileHover={{ scale: 1.06 }}
+        whileHover={{ scale: 1.06,rotate : -3 }}
         whileTap={{ scale: 0.96 }}
         className="group w-fit py-5 px-8 text-xl md:text-2xl syne 
-                   rounded-full text-black bg-[#ddf160] 
+                   rounded-full text-black bg-[#ddf160]  cursor-pointer 
                    flex items-center gap-2 transition-shadow hover:shadow-xl"
       >
         Contact Me

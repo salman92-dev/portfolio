@@ -64,7 +64,7 @@ export default function Footer() {
           variants={item}
           className="rounded-3xl flex flex-col gap-6"
         >
-          <ContactCard text="contact@salman-tech.online" />
+          <ContactCard text="contact@salmanlabs.online" />
           <ContactCard text="+92 3241161920" />
 
           <div className="bg-white rounded-2xl p-6 mt-auto">
