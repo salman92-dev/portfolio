@@ -91,7 +91,7 @@ const Responsiveness = () => {
                     Responsive Design
                 </h1>
                 <p 
-                    className="text-black/60 text-lg md:text-xl syne max-w-2xl mx-auto mb-2"
+                    className="text-black/60 text-lg md:text-xl funnel max-w-2xl mx-auto mb-2"
                     style={{
                         opacity: Math.max(0, (textProgress - 0.2) * 1.5),
                         transform: `translateY(${(1 - Math.max(0, (textProgress - 0.2) * 1.5)) * 20}px)`,
@@ -102,7 +102,7 @@ const Responsiveness = () => {
                     Fully responsive and pixel-perfect websites looks great on any device. Your site stays stunning and functional everywhere.
                 </p>
                 <p 
-                    className="text-black/60 text-lg md:text-xl syne max-w-2xl mx-auto"
+                    className="text-black/60 text-lg md:text-xl funnel max-w-2xl mx-auto"
                     style={{
                         opacity: Math.max(0, (textProgress - 0.4) * 1.5),
                         transform: `translateY(${(1 - Math.max(0, (textProgress - 0.4) * 1.5)) * 20}px)`,
@@ -134,7 +134,7 @@ const Responsiveness = () => {
                     <Icon size={36} className="text-black/40" />
                 </motion.div>
 
-                <p className="text-lg text-black mt-2">{label}</p>
+                <p className="text-lg text-black funnel mt-2">{label}</p>
                 </motion.div>
             ))}
             </motion.div>

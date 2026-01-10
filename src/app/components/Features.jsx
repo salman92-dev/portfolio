@@ -34,7 +34,7 @@ export default function FeaturesSection() {
             ))}
           </div>
 
-          <p className="mt-8 text-base md:text-xl syne text-black/60 max-w-xl leading-relaxed">
+          <p className="mt-8 text-base md:text-xl funnel text-black/60 max-w-xl leading-relaxed">
             Rayo template packed with smooth animations, modern design tools
             and clean code. {`It's`} a flexible, future-proof template {`that's`} easy
             to customize and a joy to use.

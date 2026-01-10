@@ -10,6 +10,8 @@ import ScrollToTop from "./components/ScrolltoTop";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/whatsapp";
+import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
 export default function Home() {
   return (
     <div>
@@ -22,6 +24,8 @@ export default function Home() {
       <Responsiveness />
       <FeaturesSection />
       <Projects />
+      <Services/>
+      <Testimonials/>
       <Contact />
       <Footer />
     </div>

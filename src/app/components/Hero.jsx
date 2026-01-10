@@ -166,7 +166,7 @@ const Hero = () => {
         >
           <motion.a
             href="#work"
-            className="px-6 md:px-12 py-4 bg-black border-2 text-white rounded-full font-body font-medium"
+            className="px-6 md:px-12 py-4 bg-black border-2 text-white rounded-full funnel text-base md:text-xl"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -174,7 +174,7 @@ const Hero = () => {
           </motion.a>
           <motion.a
             href="#contact"
-            className="px-6 md:px-12 py-4 border-2 border-black/20 rounded-full text-black hover:bg-black hover:text-white transition-all"
+            className="px-6 md:px-12 py-4 border-2 border-black/20 rounded-full text-black hover:bg-black hover:text-white transition-all funnel text-base md:text-xl"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
