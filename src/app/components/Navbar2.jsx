@@ -100,8 +100,8 @@ export default function Navbar() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-40 bg-white"
+            exit={{ opacity: 0}}
+            className="fixed inset-0 z-40 bg-white/50 backdrop-blur-2xl"
           >
             <motion.nav
               initial={{ y: 40, opacity: 0 }}

@@ -13,6 +13,9 @@ export default function Testimonials() {
   return (
     <section className="bg-[#f6f3ef] py-24">
       <div className="container mx-auto px-6">
+        <div>
+            <h2 className="text-center text-4xl md:text-6xl syne text-black mb-12">what our clients say</h2>
+        </div>
 
         <Swiper
           modules={[Navigation]}
