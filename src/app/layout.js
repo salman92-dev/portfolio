@@ -14,6 +14,12 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Salman's Portfolio",
   description: "Welcome to Salman’s professional portfolio showcasing expertise in web development, design, and innovative projects.",
+  keywords: [
+    "full stack developer",
+    "next js developer",
+    "web developer",
+    "react developer",
+  ],
 };
 
 export default function RootLayout({ children }) {
