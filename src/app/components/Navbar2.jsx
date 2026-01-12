@@ -57,7 +57,7 @@ export default function Navbar() {
               <motion.a
                 key={item.label}
                 href={item.href}
-                className="relative text-lg text-black/80 hover:text-black transition-colors"
+                className="relative text-lg text-black/80 hover:text-black transition-colors funnel"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.08 }}
@@ -114,7 +114,7 @@ export default function Navbar() {
                 <motion.a
                   key={item.label}
                   href={item.href}
-                  className="text-4xl syne font-bold text-black"
+                  className="text-4xl funnel font-semibold text-black"
                   initial={{ opacity: 0, y: 20,rotate:10 }}
                   animate={{ opacity: 1, y: 0,rotate:0 }}
                   transition={{ delay: i * 0.08 }}

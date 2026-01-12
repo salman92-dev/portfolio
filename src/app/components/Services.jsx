@@ -17,7 +17,7 @@ export default function Services() {
           className="text-center mb-14"
         >
           <h2 className="text-3xl md:text-5xl syne text-gray-900">
-            Services I Provide
+            My Services
           </h2>
           <p className="mt-4 text-gray-600 funnel text-xl max-w-2xl mx-auto">
             I build modern, scalable, and user-focused web experiences from design to deployment.

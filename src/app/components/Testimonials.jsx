@@ -11,12 +11,12 @@ import { testimonials } from "../data/testimonialsData";
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#f6f3ef] py-24">
+    <section className="bg-[#f6f3ef] py-12 md:py-24">
       <div className="container mx-auto px-6">
         <div>
-            <h2 className="text-center text-4xl md:text-6xl syne text-black mb-12">what our clients say</h2>
+            <h2 className="text-center text-4xl md:text-6xl syne text-black">Trusted by Our Clients</h2>
         </div>
-
+        <div className="mt-12 md:mt-16">
         <Swiper
           modules={[Navigation]}
           spaceBetween={32}
@@ -84,7 +84,7 @@ export default function Testimonials() {
             <ArrowRight />
           </button>
         </div>
-
+        </div>
       </div>
     </section>
   );
