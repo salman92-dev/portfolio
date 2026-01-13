@@ -48,15 +48,6 @@ export default function Footer() {
               )
             )}
           </ul>
-
-          <div className="flex max-sm:flex-col gap-6 text-sm mt-16 text-gray-500">
-            <span className="hover:underline cursor-pointer">
-              Privacy Policy →
-            </span>
-            <span className="hover:underline cursor-pointer">
-              Terms & conditions →
-            </span>
-          </div>
         </motion.div>
 
         {/* CENTER */}
@@ -75,7 +66,7 @@ export default function Footer() {
             <div className="flex items-center text-black border-b-2 focus:border-black border-gray-400">
               <input
                 placeholder="Your Email"
-                className="bg-transparent w-full py-2 outline-none"
+                className="bg-transparent w-full funnel focus:placeholder:text-black placeholder:text-lg  py-2 outline-none"
               />
               <motion.button
                 whileHover={{ scale: 1.1 }}
@@ -91,7 +82,7 @@ export default function Footer() {
         <motion.div variants={item} className="bg-white rounded-3xl p-8 relative">
 
           <h3 className="text-3xl syne text-black mb-6">Ecosystem</h3>
-          <ul className="space-y-3 text-lg">
+          <ul className="space-y-3 text-lg funnel">
             {[
               "Dribbble",
               "Behance",
@@ -123,7 +114,7 @@ function ContactCard({ text }) {
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
-      className="bg-white text-black rounded-2xl p-6 text-lg cursor-pointer"
+      className="bg-white text-black rounded-2xl p-6 text-lg cursor-pointer funnel"
     >
       ✦ {text}
     </motion.div>

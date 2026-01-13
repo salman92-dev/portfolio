@@ -73,14 +73,17 @@ const ContactForm = () => {
           <Input type="tel" name="phone" placeholder="Phone" value={formData.phone} onChange={handleChange} />
         </div>
 
+        <div className="w-full relative">
         <textarea
           name="message"
           placeholder="A few words about the project..."
           rows={5}
           value={formData.message}
           onChange={handleChange}
-          className="text-black text-xl syne py-4 bg-transparent border-b-2 border-black/40 focus:border-black transition-all focus:outline-none"
+          className="w-full text-black focus:placeholder:text-black text-xl syne py-4 bg-transparent border-b-2 border-black/40 focus:border-black transition-all focus:outline-none"
         />
+        <span className="absolute left-0 -bottom-[2px] h-[1px] w-0 bg-black transition-all duration-300 peer-focus:w-full" />
+        </div>
 
         <motion.button
           whileHover={{ scale: 1.04 }}
