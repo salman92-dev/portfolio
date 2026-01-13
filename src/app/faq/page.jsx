@@ -13,7 +13,9 @@ const FAQPage = () => {
         <div className="2xl:container mx-auto max-w-5xl md:px-16 py-32 md:py-20">
             <Navbar />
             <div className="container mx-auto px-6 pt-12 md:pt-22">
-                <h1 className="text-4xl md:text-8xl font-bold syne text-black mb-10 !leading-[120%]">Everything you needs to know</h1>
+                <h1 className="text-4xl md:text-8xl font-bold syne text-black mb-10 !leading-[120%]">
+                    Everything you needs to know
+                </h1>
                 <p className="text-xl md:text-2xl text-black funnel mb-10 leading-[170%]">Have questions? {`We've`} got the answers! Here, {`you'll`} find clear and concise information about our services, process, and what to expect when working with us. If you need more details, feel free to reach out!</p>
                 <div className="space-y-6">
                     <FAQ />

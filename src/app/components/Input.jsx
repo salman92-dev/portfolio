@@ -13,6 +13,7 @@ const Input = ({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
+        required
         className="peer focus:placeholder:text-black text-black w-full text-xl syne py-4 bg-transparent border-b-2 border-black/40
                    focus:outline-none focus:border-black transition-all"
       />

@@ -77,6 +77,7 @@ const ContactForm = () => {
         <textarea
           name="message"
           placeholder="A few words about the project..."
+          required
           rows={5}
           value={formData.message}
           onChange={handleChange}
