@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Alert from "./components/Alert";
 import Navbar from "./components/Navbar2";
 import Hero from "./components/Hero";
 import Advertise from "./components/advertise-strip";
@@ -17,6 +18,7 @@ export default function Home() {
     <div>
       <ScrollToTop />
       <WhatsAppButton />
+      <Alert/>
       <Navbar />
       <Hero />
       <Advertise />

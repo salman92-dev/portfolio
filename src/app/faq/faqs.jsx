@@ -79,7 +79,7 @@ export default function FAQ() {
                     transition={{ duration: 0.25, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
-                    <p className="pb-8 text-xl funnel text-gray-700">
+                    <p className="pb-8 text-xl funnel text-gray-700 cursor-pointer select-none">
                       {item.a}
                     </p>
                   </motion.div>

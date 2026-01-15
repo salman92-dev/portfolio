@@ -2,8 +2,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import FastMarquee from './marquee';
-import ScrollReveal from './ScrollrevealText';
-
+import FadeText from './Fadetext';
 
 const marqueeItems = [
     `your work ✦`,
@@ -58,7 +57,7 @@ const Hero = () => {
             },
             }}
         />
-        </motion.div>
+      </motion.div>
 
 
       <motion.div
@@ -98,7 +97,6 @@ const Hero = () => {
 
       {/* Main Content */}
       <motion.div
-        style={{ scale }}
         className="container mx-auto px-6 text-center relative z-10"
       >
         {/* Main Headline */}
@@ -149,14 +147,10 @@ const Hero = () => {
         </div>
 
         {/* Subtitle */}
-        <motion.p
-          className="mt-12 md:mt-16 text-xl md:text-lg lg:text-4xl text-[#6d6d78] max-w-5xl mx-auto funnel leading-relaxed"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.4 }}
-        >
-          Elevate your digital presence with me - dynamic and stylish template designed for creative agencies and personal brands.
-        </motion.p>
+        <FadeText 
+        text="Elevate your digital presence with me - dynamic and stylish template designed for creative agencies and personal brands."
+        className="mt-12 md:mt-16 text-xl md:text-lg lg:text-4xl text-black max-w-5xl mx-auto funnel leading-relaxed"
+        />
         {/* CTA Buttons */}
         <motion.div
           className="mt-10 flex sm:flex-row items-center justify-center gap-4"

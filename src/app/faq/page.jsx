@@ -1,8 +1,10 @@
+"use client"
 import Navbar from "../components/Navbar2";
 import Footer from "../components/Footer";
 import FAQ from "./faqs";
 import ParallyxImage from "./ParallyxImage";
 import ContactForProject from "../contact/contacForProject";
+import { motion } from "framer-motion";
 const FAQPage = () => {
     return (
         <div>
@@ -13,10 +15,27 @@ const FAQPage = () => {
         <div className="2xl:container mx-auto max-w-5xl md:px-16 py-32 md:py-20">
             <Navbar />
             <div className="container mx-auto px-6 pt-12 md:pt-22">
-                <h1 className="text-4xl md:text-8xl font-bold syne text-black mb-10 !leading-[120%]">
+                <motion.h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold syne text-black mb-10 !leading-[120%]"
+                initial={{opacity:0, y:30,filter: "blur(5px)"}}
+                whileInView={{opacity:1,y:0,filter: "blur(0)"}}
+                viewport={{once:true}}
+                transition={{
+                type: "linear",
+                duration:0.3,
+                }}
+                >
                     Everything you needs to know
-                </h1>
-                <p className="text-xl md:text-2xl text-black funnel mb-10 leading-[170%]">Have questions? {`We've`} got the answers! Here, {`you'll`} find clear and concise information about our services, process, and what to expect when working with us. If you need more details, feel free to reach out!</p>
+                </motion.h1>
+                <motion.p className="text-xl md:text-2xl text-black funnel mb-10 leading-[170%]"
+                initial={{opacity:0, y:30,filter: "blur(5px)"}}
+                whileInView={{opacity:1,y:0,filter: "blur(0)"}}
+                viewport={{once:true}}
+                transition={{
+                type: "linear",
+                duration:0.5,
+                }}
+                >Have questions? {`We've`} got the answers! Here, {`you'll`} find clear and concise information about our services, process, and what to expect when working with us. If you need more details, feel free to reach out!
+                </motion.p>
                 <div className="space-y-6">
                     <FAQ />
                 </div>

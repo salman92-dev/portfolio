@@ -34,7 +34,7 @@ export default function Navbar() {
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed inset-x-0 z-50 transition-all duration-500 ${
           isScrolled
-            ? "top-4 mx-4 md:mx-16 rounded-full bg-white/90 backdrop-blur-xl shadow-lg py-3"
+            ? "top-4 mx-4 md:mx-8 lg:mx-10 xl:mx-16 rounded-full bg-white/90 backdrop-blur-xl shadow-lg py-3"
             : "top-0 py-6"
         }`}
       >
@@ -52,7 +52,7 @@ export default function Navbar() {
           </motion.a>
 
           {/* DESKTOP NAV */}
-          <nav className="hidden md:flex items-center gap-14">
+          <nav className="hidden md:flex items-center md:gap-6 lg:gap-12 xl:gap-14">
             {navItems.map((item, i) => (
               <motion.a
                 key={item.label}
@@ -73,7 +73,7 @@ export default function Navbar() {
             href="https://wa.me/923241161920?text=Hello%20Salman%2C%20I%20would%20like%20to%20discuss%20a%20project"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-flex px-10 py-2.5 rounded-full border-2 border-black 
+            className="hidden md:inline-flex md:px-6 lg:px-8 xl:px-10 py-2.5 rounded-full border-2 border-black 
                         text-black text-lg hover:bg-black hover:text-white transition-all"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}

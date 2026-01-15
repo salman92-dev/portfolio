@@ -60,20 +60,20 @@ const ContactForProject = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="text-3xl md:text-5xl lg:text-8xl text-white syne mb-2 md:mb-6 flex items-start gap-2"
+        className="text-3xl md:text-5xl lg:text-6xl xl:text-8xl text-white syne mb-2 md:mb-6 flex items-start gap-2"
       >
         {/* Heart pulse */}
         <motion.span
           animate={{ scale: [1, 1.15, 1] }}
           transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
-          className="mt-1 md:mt-4"
+          className="mt-1 md:mt-2"
         >
           <Image
             src="/images/heart-icon.webp"
             alt="heart"
             width={80}
             height={80}
-            className="w-8 md:w-24"
+            className="w-8 md:w-12 lg:w-14 xl:w-22"
           />
         </motion.span>
 
@@ -84,7 +84,7 @@ const ContactForProject = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.35, duration: 0.6 }}
-        className="text-3xl md:text-5xl lg:text-8xl text-white syne mb-6 md:mb-12"
+        className="text-3xl md:text-5xl lg:text-6xl xl:text-8xl text-white syne mb-6 md:mb-12"
       >
         your project!
       </motion.h2>
