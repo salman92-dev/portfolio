@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section
       id="work"
-      className="2xl:container mx-auto px-6 md:px-10 relative overflow-hidden bg-white py-8 md:py-12"
+      className="2xl:container mx-auto px-6 md:px-10 relative overflow-hidden bg-white py-12 md:py-16 mb-16 md:mb-24 lg:mb-36"
     >
          <motion.div
       className="absolute w-40 md:w-58 right-0 md:right-12 md:top-4"

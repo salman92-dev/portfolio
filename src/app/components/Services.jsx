@@ -22,9 +22,9 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-20 relative"
+      className="2xl:container mx-auto relative px-6 md:px-10 lg:px-16 mb-12 md:mb-24 lg:mb-36"
     >
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="relative z-10">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

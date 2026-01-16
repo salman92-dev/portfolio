@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Star, ArrowUpRight, ArrowLeft, ArrowRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { motion } from "framer-motion"
 
 import "swiper/css";
 
@@ -11,10 +12,20 @@ import { testimonials } from "../data/testimonialsData";
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#f6f3ef] py-12 md:py-24">
-      <div className="container mx-auto px-6">
+    <section className="bg-[#f6f3ef] mb-12 py-12 md:py-16 mb-12 md:mb-24 lg:mb-36">
+      <div className="2xl:container mx-auto px-6 md:px-10 lg:px-16">
         <div>
-            <h2 className="text-center text-4xl md:text-6xl syne text-black">Trusted by Our Clients</h2>
+            <motion.h2 className="text-center text-4xl md:text-6xl syne text-black"
+            initial={{opacity:0,y:40}}
+            whileInView={{opacity:1,y:0}}
+            transition={{
+              ease: "easeInOut",
+              duration:0.7
+            }}
+            viewport={{once:true}}
+            >
+              Trusted by Our Clients
+              </motion.h2>
         </div>
         <div className="mt-12 md:mt-16">
         <Swiper

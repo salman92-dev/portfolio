@@ -1,7 +1,7 @@
 import FastMarquee from "./marquee";
 const Advertise = () => {
     return (
-        <div className="py-10 my-10 md:my-20 md:py-20 border-t border-b border-gray-200">
+        <div className="py-10 md:py-20 border-t border-b border-gray-200 mb-12">
             <FastMarquee
                 items={[
                     "your Brand ✦",

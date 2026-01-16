@@ -24,7 +24,7 @@ const ContactForProject = () => {
       viewport={{ once: true }}
       className="relative 2xl:container mx-auto bg-black flex flex-col justify-center 
                  p-6 py-18 md:py-24 md:p-12 rounded-4xl 
-                 max-sm:mx-4 max-2xl:mx-20 overflow-hidden"
+                 max-sm:mx-6 max-2xl:mx-16 overflow-hidden"
     >
       {/* Floating spring */}
       <motion.div

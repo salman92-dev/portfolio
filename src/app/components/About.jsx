@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import ScrollReveal from "./ScrollrevealText";
+import FadeText2 from "./Fadetext2";
 const About = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const sectionRef = useRef(null);
@@ -40,7 +41,7 @@ const About = () => {
   const words = "We craft digital experiences that inspire and engage your audience through innovative design and cutting-edge technology".split(" ");
 
   return (
-    <section ref={sectionRef} id="about" className="2xl:container mx-auto px-6 md:px-12 lg:px-10 pb-12">
+    <section ref={sectionRef} id="about" className="2xl:container mx-auto px-6 md:px-12 lg:px-16 mb-16 md:mb-24  lg:mb-36">
       <div className="">
         <h2 
           className="text-lg md:text-xl lg:text-xl text-[#9f8be7] mb-8 transition-all duration-300"
@@ -51,7 +52,7 @@ const About = () => {
         >
             About Me
         </h2>
-        <p className="text-3xl md:text-6xl syne text-black max-w-5xl !leading-[120%]">
+        {/* <p className="text-3xl md:text-6xl syne text-black max-w-5xl !leading-[120%]">
           {words.map((word, index) => {
             const isHighlighted = word === "inspire" || word === "engage";
             const wordProgress = Math.max(0, Math.min(1, (scrollProgress * words.length  - index) / 1));
@@ -70,24 +71,27 @@ const About = () => {
               </span>
             );
           })}
-        </p>
+        </p> */}
+        <FadeText2 text="We craft digital experiences that inspire and engage your audience through innovative design and cutting-edge technology" 
+        className="max-w-5xl text-black syne text-3xl md:text-6xl leading-[130%]"
+        />
         </div>
         <div className="flex flex-wrap max-md:gap-6 items-center justify-between mt-12">
             <div>
                 <h2 className="text-black text-4xl md:text-6xl syne mb-2 text-center">50+</h2>
-                <p className="text-black/70 text-center">Projects Completed</p>
+                <p className="text-black/80 text-center funnel">Projects Completed</p>
             </div>
             <div>
                 <h2 className="text-black text-4xl md:text-6xl syne mb-2 text-center">6+</h2>
-                <p className="text-black/70 text-center">Core Technologies</p>
+                <p className="text-black/80 text-center funnel">Core Technologies</p>
             </div>
             <div>
                 <h2 className="text-black text-4xl md:text-6xl syne mb-2 text-center">20+</h2>
-                <p className="text-black/70 text-center">UI Animations</p>
+                <p className="text-black/80 text-center funnel">UI Animations</p>
             </div>
             <div>
                 <h2 className="text-black text-4xl md:text-6xl syne mb-2 text-center">100%</h2>
-                <p className="text-black/70 text-center">Learning Driven</p>
+                <p className="text-black/80 text-center funnel">Learning Driven</p>
             </div>
         </div>
     </section>

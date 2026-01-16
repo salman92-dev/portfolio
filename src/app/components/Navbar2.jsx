@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -13,17 +13,7 @@ const navItems = [
 ];
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      setIsScrolled(window.scrollY > 80);
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
     <>
@@ -32,13 +22,9 @@ export default function Navbar() {
         initial={{ y: -120 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-        className={`fixed inset-x-0 z-50 transition-all duration-500 ${
-          isScrolled
-            ? "top-4 mx-4 md:mx-8 lg:mx-10 xl:mx-16 rounded-full bg-white/90 backdrop-blur-xl shadow-lg py-3"
-            : "top-0 py-6"
-        }`}
+        className={`2xl:container mx-auto relative z-50 px-6 md:px-10 lg:px-16 py-3 md:py-6 transition-all duration-500 $`}
       >
-        <div className="flex items-center justify-between px-4 md:px-8">
+        <div className="flex items-center justify-between">
           {/* LOGO */}
           <motion.a
             href="/"

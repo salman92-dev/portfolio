@@ -16,7 +16,7 @@ const ParallaxBg = () => {
   const y = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
 
   return (
-    <section className="relative w-full 2xl:container mx-auto px-4 sm:px-6 md:px-8 lg:px-20 pb-18">
+    <section className="relative w-full 2xl:container mx-auto px-6 md:px-10 lg:px-16 pb-18">
         <div className="w-fit mx-auto md:absolute max-md:mb-28 -top-22 right-10  md:right-28 z-10 backdrop-blur-md md:bg-white/40 rounded-full border-2 border-white">
         <Image src="/images/wings.webp" alt="wings"  width={300} height={300} className="w-24 top-[27%] left-14 md:w-[50%] absolute z-100 md:top-[25%] md:left-[25%]" />
             <CircularText

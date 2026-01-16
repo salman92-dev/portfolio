@@ -24,11 +24,12 @@ const Hero = () => {
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
 
   return (
-    <section ref={containerRef} className="relative flex items-center justify-center overflow-hidden pt-50 md:pt-60">
+    <section ref={containerRef} className="2xl:container mx-auto overflow-hidden py-18 md:py-28">
+      <div className='relative flex items-center justify-center'>
       {/* Floating 3D Elements */}
       <motion.div
         style={{ y: y1 }}
-        className="absolute left-[2%] md:left-[8%] top-[25%] md:top-[20%] w-32 md:w-56 lg:w-72 floating z-0"
+        className="absolute left-[2%] md:left-[8%] top-[-7%] md:top-[-10%] w-32 md:w-56 lg:w-72 floating z-0"
         >
         <motion.img
             src="/images/heart.webp"
@@ -58,11 +59,9 @@ const Hero = () => {
             }}
         />
       </motion.div>
-
-
       <motion.div
         style={{ y: y2 }}
-        className="absolute right-[2%] md:right-[8%] top-[12%] md:top-[10%] w-28 md:w-44 lg:w-46 z-11"
+        className="absolute right-[2%] md:right-[8%] top-[-12%] md:top-[-18%] w-24 md:w-44 lg:w-46 z-11"
         >
         <motion.img
             src="/images/astronaut.webp"
@@ -93,8 +92,6 @@ const Hero = () => {
             }}
         />
       </motion.div>
-
-
       {/* Main Content */}
       <motion.div
         className="container mx-auto px-6 text-center relative z-10"
@@ -176,6 +173,7 @@ const Hero = () => {
           </motion.a>
         </motion.div>
       </motion.div>
+      </div>
     </section>
   );
 };

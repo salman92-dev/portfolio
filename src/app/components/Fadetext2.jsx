@@ -7,6 +7,7 @@ export default function FadeText2({
   text,
   className = "",
   highlightWords = ["Next.js", "Figma"],
+  highlightWords2 = ["inspire","engage"]
 }) {
   const words = useMemo(() => text.split(" "), [text]);
   const ref = useRef(null);
@@ -26,6 +27,7 @@ export default function FadeText2({
           total={words.length}
           scrollYProgress={scrollYProgress}
           highlightWords={highlightWords}
+          highlightWords2={highlightWords2}
         />
       ))}
     </div>

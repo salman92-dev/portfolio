@@ -18,11 +18,12 @@ const item = {
 
 export default function Footer() {
   return (
-    <footer className="2xl:container mx-auto px-6 py-10 rounded-3xl">
-        <motion.h3 className="text-center text-[17.5vw] md:text-[18.5vw] 2xl:text-[18rem] syne text-black !leading-[100%] mb-8"
-        initial={{ opacity: 0, scale: 0.8, backdropFilter: 'blur(15px)' }}
-        whileInView={{ opacity: 1, scale: 1, backdropFilter: 'blur(0px)' }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+    <footer className="2xl:container mx-auto px-6 py-10 pt-0 rounded-3xl">
+        <motion.h3 className="text-center text-[17.5vw] md:text-[18.5vw] 2xl:text-[18rem] syne text-black !leading-[80%] mb-8"
+        initial={{ opacity: 0, y:50, backdropFilter: 'blur(15px)' }}
+        whileInView={{ opacity: 1,y:0,backdropFilter: 'blur(0px)' }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{once : true}}
         >
             SALMAN
         </motion.h3>
@@ -36,14 +37,22 @@ export default function Footer() {
         {/* LEFT */}
         <motion.div variants={item} className="bg-white rounded-3xl p-8">
           <ul className="space-y-4 text-3xl font-semibold">
-            {["Home", "About us", "Works", "Services", "Insights", "Contact"].map(
-              (link, i) => (
+            {[
+              {title :"Home", link : "/"},
+              {title : "About", link : "/about"}, 
+              {title : "Faq", link : "/faq"},
+              {title:"Services", link : "/services"}, 
+              {title : "Contact", link : "/contact"}
+            ].map(
+              (item, i) => (
                 <motion.li
                   key={i}
                   whileHover={{ x: 6 }}
                   className="text-black syne cursor-pointer flex items-center gap-3"
                 >
-                  {link}
+                  <a href={item.link}>
+                    {item.title}
+                  </a>
                 </motion.li>
               )
             )}

@@ -70,7 +70,7 @@ const Responsiveness = () => {
     return (
         <section 
             ref={sectionRef}
-            className="2xl:container mx-auto px-6 md:px-10 flex flex-col-reverse max-md:gap-8 md:flex-row items-center justify-between py-20 overflow-hidden"
+            className="2xl:container mx-auto px-6 md:px-10 lg:px-16 flex flex-col-reverse max-md:gap-8 md:flex-row items-center justify-between mb-16 md:mb-24  lg:mb-36 overflow-hidden"
         >
             <div 
                 className="w-full md:w-[48%]"
@@ -117,14 +117,14 @@ const Responsiveness = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="flex flex-wrap items-center max-md:justify-between gap-12 mt-12"
+            className="flex flex-wrap items-center max-md:justify-between gap-6 mt-12"
             >
             {devices.map(({ icon: Icon, label }, index) => (
                 <motion.div
                 key={index}
                 variants={item}
                 whileHover={{ y: -6 }}
-                className="flex flex-col items-center w-[40%] md:w-[10%]"
+                className="flex flex-col items-center w-[40%] md:w-[18%]"
                 >
                 <motion.div
                     whileHover={{ scale: 1.1, rotate: 3 }}

@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function FeaturesSection() {
   return (
-    <section className="2xl:container mx-auto pt-0 py-8 md:py-20 overflow-hidden">
-      <div className="flex flex-col-reverse md:flex-row-reverse px-6 md:px-10 items-center max-md:gap-12">
+    <section className="2xl:container mx-auto mb-16 md:mb-24  lg:mb-36 overflow-hidden">
+      <div className="flex flex-col-reverse md:flex-row-reverse px-6 md:px-10 lg:px-16 items-center max-md:gap-12">
 
         {/* LEFT CONTENT */}
         <motion.div

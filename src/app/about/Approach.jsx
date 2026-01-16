@@ -14,7 +14,13 @@ export default function ApproachSection() {
       description:
         "From pixel-perfect designs to flawless code, every aspect of our projects is crafted with care to ensure the highest standards of quality.",
       icon: (
-        <Image
+        <motion.img
+        animate={{ rotate: 360 }}
+        transition={{
+          repeat: Infinity,
+          duration: 4, // speed (lower = faster)
+          ease: "linear",
+        }}
           src="/images/perfection.webp"
           alt="Perfection"
           className="w-16 h-16"
@@ -28,7 +34,13 @@ export default function ApproachSection() {
       description:
         "We stay ahead of design trends, offering modern and visually impactful solutions that set your brand apart.",
       icon: (
-        <Image
+        <motion.img
+        animate={{ rotate: -360 }}
+        transition={{
+          repeat: Infinity,
+          duration: 4, // speed (lower = faster)
+          ease: "linear",
+        }}
           src="/images/innovative.webp"
           alt="Innovative"
           className="w-16 h-16 rotate-[-15deg]"
@@ -42,7 +54,13 @@ export default function ApproachSection() {
       description:
         "We are passionate about integrating the latest technologies and trends, including interactive animations and mobile-first strategies.",
       icon: (
-        <Image
+        <motion.img
+        animate={{ rotate: 360 }}
+        transition={{
+          repeat: Infinity,
+          duration: 4, // speed (lower = faster)
+          ease: "linear",
+        }}
           src="/images/expertise.webp"
           alt="Expertise"
           className="w-16 h-16 rotate-[-15deg]"
@@ -56,7 +74,13 @@ export default function ApproachSection() {
       description:
         "From web design to development, branding, SEO, and UX/UI, we provide a full range of services that cover all your digital needs.",
       icon: (
-        <Image
+        <motion.img
+        animate={{ rotate: -360 }}
+        transition={{
+          repeat: Infinity,
+          duration: 4, // speed (lower = faster)
+          ease: "linear",
+        }}
           src="/images/cycle.webp"
           alt="Full-Cycle services"
           className="w-16 h-16 rotate-[-15deg]"
@@ -70,7 +94,17 @@ export default function ApproachSection() {
       description:
         "Our clients consistently see improved engagement, conversion rates, and business growth.",
       icon: (
-        <Image
+        <motion.img
+          animate={{
+            rotate: 360,
+          }}
+          transition={{
+            rotate: {
+              repeat: Infinity,
+              duration: 5,
+              ease: "linear",
+            },
+          }}
           src="/images/success.webp"
           alt="Client Success"
           className="w-16 h-16 rotate-[-15deg]"
@@ -82,21 +116,23 @@ export default function ApproachSection() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50 relative">
-      <div className="2xl:container mx-auto md:px-16 px-6">
+    <section className="py-8 md:py-20 relative">
+      <div className="2xl:container mx-auto md:px-10 lg:px-16 px-6">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-16">
           <h2 className="text-5xl md:text-6xl font-bold syne leading-[130%] text-gray-900 mb-6 md:mb-0">
-            Approach and <br /> philosophy
+            Approach and <br /> Philosophy
           </h2>
 
-          <ul className="text-gray-700 space-y-2 text-lg md:text-base md:space-y-1 funnel md:text-left">
+          <ul className="text-gray-700 space-y-2 text-lg md:space-y-1 funnel md:text-left mt-2">
             <li>Design</li>
             <li>Development</li>
             <li>Mastership</li>
           </ul>
 
-          <button className="ml-0 md:ml-6 mt-4 md:mt-0 px-6 py-2 border border-black rounded-full flex items-center justify-center text-black font-medium hover:bg-black hover:text-white transition-colors">
+          <button className="cursor-pointer ml-0 md:ml-6 mt-8 md:mt-2 px-6 py-2 border-2 border-black funnel rounded-full flex items-center justify-center text-black text-xl hover:bg-black hover:text-white transition-colors"
+           onClick={()=> window.location = "/contact"}
+          >
             {`Let's`} Chat
           </button>
         </div>
@@ -116,14 +152,14 @@ export default function ApproachSection() {
               animate={{ opacity: hoveredIndex === null || hoveredIndex === index ? 1 : 0.3 }}
             >
               {/* Icon */}
-              <div className="flex-shrink-0 min-w-sm mb-4 md:mb-0">{item.icon}</div>
+              <div className="flex-shrink-0 md:min-w-sm mb-6 md:mb-0">{item.icon}</div>
 
               {/* Text */}
-              <div className="flex flex-col md:flex-row gap-12">
-                <h3 className="text-2xl md:text-3xl font-bold syne text-gray-900 mb-2">
+              <div className="flex flex-col md:flex-row md:gap-12">
+                <h3 className="text-3xl md:text-4xl font-bold syne text-black mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+                <p className="text-black/80 tracking-[1px] text-xl funnel leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -134,11 +170,6 @@ export default function ApproachSection() {
         {/* Bottom Divider */}
         <div className="border-t-2 border-black" />
       </div>
-
-      {/* Scroll-up button */}
-      <button className="fixed bottom-6 right-6 bg-black text-white p-3 rounded-full shadow-lg hover:bg-gray-800 transition-colors">
-        <BiUpArrow size={24} />
-      </button>
     </section>
   );
 }

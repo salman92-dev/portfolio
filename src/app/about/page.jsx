@@ -2,9 +2,10 @@
 import { motion } from "framer-motion"
 import Navbar from "../components/Navbar2";
 import ApproachSection from "./Approach";
+import TechStack from "./Techstack";
 import Footer from "../components/Footer";
 import TextType from "../components/TextTyping"
-
+import ContactForProject from "../contact/contacForProject";
 
 export default function AboutPage() {
   
@@ -116,7 +117,6 @@ export default function AboutPage() {
                   ease: [0.22, 1, 0.36, 1]
                 }}
                 whileHover={{ 
-                  scale: 1.02,
                   boxShadow: "0 20px 60px rgba(159, 139, 231, 0.15)"
                 }}
                 className="bg-gradient-to-br from-gray-50 to-purple-50/30 border border-gray-200 rounded-2xl p-8 h-fit mt-8 backdrop-blur-sm"
@@ -155,65 +155,10 @@ export default function AboutPage() {
           </div>
         </motion.div>
       </section>
-
-      <motion.section 
-        className="py-20 overflow-hidden">
-        <div className="container mx-auto px-6 max-w-6xl">
-          {/* Tech Stack */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-            className="mb-20"
-          >
-            <motion.h2 
-              className="text-2xl md:text-4xl font-semibold text-gray-900 syne mb-8"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              Tech Stack
-            </motion.h2>
-
-            <div className="flex flex-wrap gap-4">
-              {[
-                "Next.js",
-                "React",
-                "Tailwind CSS",
-                "Framer Motion",
-                "JavaScript",
-                "HTML & CSS",
-                "Git"
-              ].map((tech, i) => (
-                <motion.span
-                  key={tech}
-                  initial={{ opacity: 0, scale: 0, rotateZ: -10 }}
-                  whileInView={{ opacity: 1, scale: 1, rotateZ: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 0.5,
-                    delay: i * 0.08,
-                    type: "spring",
-                    stiffness: 200,
-                    damping: 15
-                  }}
-                  whileHover={{
-                    scale: 1.15,
-                    rotate: [0, -5, 5, 0],
-                    transition: { duration: 0.3 }
-                  }}
-                  className="funnel px-6 py-3 text-sm rounded-full bg-gradient-to-r from-[#9f8be7] to-[#7c6bc9] text-white shadow-lg hover:shadow-2xl cursor-default"
-                >
-                  {tech}
-                </motion.span>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </motion.section>
       <ApproachSection/>
+      <TechStack/>
+      <div className="py-4 md:py-12"></div>
+      <ContactForProject/>
       <Footer/>
     </>
   );
