@@ -32,9 +32,19 @@ const Projects = () => {
       <div className="relative z-10 px-4">
         
         {/* Heading */}
-        <h2 className="relative inline-block text-4xl md:text-6xl font-semibold syne text-black text-center mx-auto">
-          Projects
-        </h2>
+        <div className="overflow-hidden">
+          <motion.h2 className="relative inline-block text-4xl md:text-6xl font-semibold syne text-black text-center mx-auto"
+          initial={{y:30,opacity:0}}
+          whileInView={{y:0,opacity:1}}
+          viewport={{once:true}}
+          transition={{
+            duration:0.4,
+            ease:"linear"
+          }}
+          >
+            Projects
+          </motion.h2>
+        </div>
 
         {/* Frame */}
         <div className="relative mt-20 border border-black/10 rounded-3xl py-6 md:py-10">

@@ -75,7 +75,7 @@ export default function Testimonials() {
         </Swiper>
 
         {/* Bottom Navigation */}
-        <div className="flex items-center gap-6 md:mt-6">
+        <div className="flex items-center justify-center gap-6 md:mt-6">
           <button className="prev-btn w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-500 hover:border-black text-gray-500 hover:text-black cursor-pointer">
             <ArrowLeft />
           </button>

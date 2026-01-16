@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import Navbar from "../components/Navbar2";
+import ApproachSection from "./Approach";
 import Footer from "../components/Footer";
 import TextType from "../components/TextTyping"
 
@@ -14,7 +15,7 @@ export default function AboutPage() {
       <section className="2xl:container mx-auto px-6 md:px-12 max-w-8xl pt-24 md:pt-32 relative">
         <motion.div 
           className="relative flex flex-col md:flex-row items-start gap-8 md:gap-12">
-          <div className="w-full md:w-[15%] h-auto sticky top-30">
+          <div className="w-full md:w-[15%] h-auto md:sticky top-30">
             <motion.p 
               className="text-black text-2xl funnel flex items-center gap-2"
               initial={{ opacity: 0, x: -50 }}
@@ -57,7 +58,7 @@ export default function AboutPage() {
               </motion.div>
 
               <motion.p 
-                className="mt-6 text-xl syne md:text-3xl text-black max-w-2xl"
+                className="mt-6 text-2xl syne md:text-3xl text-black max-w-2xl"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -69,7 +70,7 @@ export default function AboutPage() {
                 Turning Figma designs into high-quality Next.js experiences
               </motion.p>
 
-              <div className="text-black text-lg md:text-2xl mt-12 space-y-8">
+              <div className="text-black/80 text-2xl md:text-2xl mt-12 space-y-8">
                 {[
                   "Hey! I am Salman Ahmad. I'm a Next.js developer who specializes in converting Figma designs into fast, responsive, and scalable web applications. I focus on building clean user interfaces that look great and perform exceptionally well.",
                   "My work revolves around modern frontend technologies like Next.js, React, and Tailwind CSS. I follow best practices for component structure, accessibility, and performance to ensure long-term maintainability.",
@@ -120,11 +121,11 @@ export default function AboutPage() {
                 }}
                 className="bg-gradient-to-br from-gray-50 to-purple-50/30 border border-gray-200 rounded-2xl p-8 h-fit mt-8 backdrop-blur-sm"
               >
-                <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6">
+                <h3 className="text-2xl syne md:text-4xl font-semibold text-gray-900 mb-6">
                   What I Do
                 </h3>
 
-                <ul className="space-y-4 text-lg tracking-[1px]">
+                <ul className="space-y-4 text-black list-disc text-lg tracking-[1px]">
                   {[
                     "Figma to Next.js conversion",
                     "Responsive & mobile-first UI",
@@ -143,20 +144,8 @@ export default function AboutPage() {
                         ease: "easeOut"
                       }}
                       whileHover={{ x: 10, color: "#9f8be7" }}
-                      className="flex items-center gap-3 cursor-default"
+                      className="list-disc list-outside funnel cursor-default"
                     >
-                      <motion.span
-                        initial={{ scale: 0 }}
-                        whileInView={{ scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{
-                          duration: 0.4,
-                          delay: i * 0.1,
-                          type: "spring",
-                          stiffness: 200
-                        }}
-                        className="w-2 h-2 bg-[#9f8be7] rounded-full"
-                      />
                       {item}
                     </motion.li>
                   ))}
@@ -179,7 +168,7 @@ export default function AboutPage() {
             className="mb-20"
           >
             <motion.h2 
-              className="text-2xl md:text-4xl font-semibold text-gray-900 mb-8"
+              className="text-2xl md:text-4xl font-semibold text-gray-900 syne mb-8"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -215,94 +204,16 @@ export default function AboutPage() {
                     rotate: [0, -5, 5, 0],
                     transition: { duration: 0.3 }
                   }}
-                  className="px-6 py-3 text-sm rounded-full bg-gradient-to-r from-[#9f8be7] to-[#7c6bc9] text-white shadow-lg hover:shadow-2xl cursor-default"
+                  className="funnel px-6 py-3 text-sm rounded-full bg-gradient-to-r from-[#9f8be7] to-[#7c6bc9] text-white shadow-lg hover:shadow-2xl cursor-default"
                 >
                   {tech}
                 </motion.span>
               ))}
             </div>
           </motion.div>
-
-          {/* Approach */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl"
-          >
-            <motion.h2 
-              className="text-2xl md:text-4xl font-semibold text-gray-900 mb-6"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              My Approach
-            </motion.h2>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative"
-            >
-              <motion.div
-                className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-[#9f8be7] to-transparent"
-                initial={{ scaleY: 0 }}
-                whileInView={{ scaleY: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                style={{ transformOrigin: "top" }}
-              />
-              
-              <motion.p 
-                className="text-gray-700 leading-relaxed text-lg pl-6"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-              >
-                I believe great frontend development is a balance of visual accuracy,
-                clean code, and user experience. Every project is built with attention
-                to detail, performance in mind, and a focus on scalability.
-              </motion.p>
-            </motion.div>
-          </motion.div>
-
-          {/* Decorative element */}
-          <motion.div
-            className="mt-20 flex justify-center"
-            initial={{ opacity: 0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 1,
-              type: "spring",
-              stiffness: 100
-            }}
-          >
-            <motion.div
-              className="w-16 h-16 border-2 border-[#9f8be7] rounded-full"
-              animate={{
-                rotate: 360,
-                scale: [1, 1.2, 1]
-              }}
-              transition={{
-                rotate: { duration: 10, repeat: Infinity, ease: "linear" },
-                scale: { duration: 2, repeat: Infinity, ease: "easeInOut" }
-              }}
-            >
-              <motion.div
-                className="w-full h-full border-2 border-purple-300 rounded-full"
-                animate={{ rotate: -360 }}
-                transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-              />
-            </motion.div>
-          </motion.div>
         </div>
       </motion.section>
+      <ApproachSection/>
       <Footer/>
     </>
   );
