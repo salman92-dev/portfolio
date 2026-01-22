@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Star, ArrowUpRight, ArrowLeft, ArrowRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { motion } from "framer-motion"
 
 import "swiper/css";
@@ -29,13 +30,18 @@ export default function Testimonials() {
         </div>
         <div className="mt-12 md:mt-16">
         <Swiper
-          modules={[Navigation]}
+          modules={[Autoplay,Navigation]}
           spaceBetween={32}
           loop="true"
           navigation={{
             nextEl: ".next-btn",
             prevEl: ".prev-btn",
           }}
+          autoplay={{
+        delay: 4000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      }}
           breakpoints={{
             0: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
