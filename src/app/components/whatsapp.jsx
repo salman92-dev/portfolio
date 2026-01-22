@@ -24,7 +24,7 @@ const WhatsAppButton = () => {
   };
 
   return (
-    <div className="fixed bottom-24 right-8 z-50">
+    <div className="fixed bottom-24 right-8 z-[40]">
       {/* Options */}
       {open && (
         <div className="mb-3 bg-white shadow-xl rounded-2xl p-3 flex flex-col gap-2 animate-fadeIn">

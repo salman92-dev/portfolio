@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
+import FadeText2 from "../components/Fadetext2";
 
 const float = {
   animate: {
@@ -24,7 +25,7 @@ const ContactForProject = () => {
       viewport={{ once: true }}
       className="relative 2xl:container mx-auto bg-black flex flex-col justify-center 
                  p-6 py-18 md:py-24 md:p-12 rounded-4xl 
-                 max-sm:mx-6 max-2xl:mx-16 overflow-hidden"
+                 max-sm:mx-6 max-2xl:mx-16 overflow-hidden mb-16 md:mb-24"
     >
       {/* Floating spring */}
       <motion.div
@@ -56,13 +57,14 @@ const ContactForProject = () => {
       </motion.div>
 
       {/* Heading */}
-      <motion.h2
+      {/* <motion.h2
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
+        viewport={{once:true}}
         className="text-3xl md:text-5xl lg:text-6xl xl:text-8xl text-white syne mb-2 md:mb-6 flex items-start gap-2"
       >
-        {/* Heart pulse */}
+ 
         <motion.span
           animate={{ scale: [1, 1.15, 1] }}
           transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
@@ -78,22 +80,41 @@ const ContactForProject = () => {
         </motion.span>
 
         {`Let's`} talk about
-      </motion.h2>
+      </motion.h2> */}
 
-      <motion.h2
+      {/* <motion.h2
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.35, duration: 0.6 }}
+        viewport={{once:true}}
         className="text-3xl md:text-5xl lg:text-6xl xl:text-8xl text-white syne mb-6 md:mb-12"
       >
         your project!
-      </motion.h2>
-
+      </motion.h2> */}
+      <div className="flex gap-2">
+        <motion.span
+          animate={{ scale: [1, 1.15, 1] }}
+          transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+          className="mt-2 md:mt-2"
+        >
+          <Image
+            src="/images/heart-icon.webp"
+            alt="heart"
+            width={80}
+            height={80}
+            className="w-12 md:w-12 lg:w-14 xl:w-22"
+          />
+        </motion.span>
+        <FadeText2 
+        text="Let's talk about your Project!" 
+        className="text-3xl md:text-5xl lg:text-6xl xl:text-8xl text-white syne mb-6 md:mb-12 max-w-4xl"
+        />
+      </div>
       {/* Button */}
       <motion.button
         whileHover={{ scale: 1.06,rotate : -3 }}
         whileTap={{ scale: 0.96 }}
-        className="group w-fit py-5 px-8 text-xl md:text-2xl syne 
+        className="group w-fit py-2 px-5 md:py-5 md:px-8 text-lg md:text-2xl syne 
                    rounded-full text-black bg-[#ddf160]  cursor-pointer 
                    flex items-center gap-2 transition-shadow hover:shadow-xl"
       >

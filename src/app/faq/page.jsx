@@ -5,9 +5,13 @@ import FAQ from "./faqs";
 import ParallyxImage from "./ParallyxImage";
 import ContactForProject from "../contact/contacForProject";
 import { motion } from "framer-motion";
+import ScrollToTop from "../components/ScrolltoTop";
+import WhatsAppButton from "../components/whatsapp";
 const FAQPage = () => {
     return (
         <>
+        <ScrollToTop/>
+        <WhatsAppButton />
         <Navbar />
         <div>
         <h3 className="flex items-center gap-2 text-2xl funnel text-black absolute top-28 left-6 lg:top-48 lg:left-12">

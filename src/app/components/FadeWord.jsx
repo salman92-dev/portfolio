@@ -13,7 +13,7 @@ const start = (index / total) * maxWindow;
 const end = start + (1 - maxWindow);
 
 
-  const opacity = useTransform(scrollYProgress, [start, end], [0, 1]);
+  const opacity = useTransform(scrollYProgress, [start, end], [0.2, 1]);
   const y = useTransform(scrollYProgress, [start, end], [12, 0]);
 
   const isHighlighted = highlightWords.includes(word);

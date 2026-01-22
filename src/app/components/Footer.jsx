@@ -19,13 +19,13 @@ const item = {
 export default function Footer() {
   return (
     <footer className="2xl:container mx-auto px-6 py-10 pt-0 rounded-3xl">
-        <motion.h3 className="text-center text-[17.5vw] md:text-[18.5vw] 2xl:text-[18rem] syne text-black !leading-[80%] mb-8"
+        <motion.h3 className="text-center text-[22.5vw] md:text-[25.5vw] 2xl:text-[18rem] funnel font-semibold text-black !leading-[80%] mb-8"
         initial={{ opacity: 0, y:50, backdropFilter: 'blur(15px)' }}
         whileInView={{ opacity: 1,y:0,backdropFilter: 'blur(0px)' }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{once : true}}
         >
-            SALMAN
+            Salman
         </motion.h3>
       <motion.div
         variants={container}

@@ -6,12 +6,16 @@ import TechStack from "./Techstack";
 import Footer from "../components/Footer";
 import TextType from "../components/TextTyping"
 import ContactForProject from "../contact/contacForProject";
+import ScrollToTop from "../components/ScrolltoTop";
+import WhatsAppButton from "../components/whatsapp";
 
 export default function AboutPage() {
   
 
   return (
     <>
+    <WhatsAppButton />
+    <ScrollToTop />
     <Navbar />
       <section className="2xl:container mx-auto px-6 md:px-12 max-w-8xl pt-24 md:pt-32 relative">
         <motion.div 
@@ -54,7 +58,7 @@ export default function AboutPage() {
                   text={["Website Developer", "SEO Expert"]}
                   typingSpeed={80}
                   cursorClassName="text-[#9f8be7]"
-                  className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900"
+                  className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl syne text-gray-900"
                 />
               </motion.div>
 

@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
   { label: "Contact", href: "/contact" },
   { label: "Faq", href: "/faq" },
 ];
@@ -22,9 +22,9 @@ export default function Navbar() {
         initial={{ y: -120 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-        className={`2xl:container mx-auto relative z-50 px-6 md:px-10 lg:px-16 py-3 md:py-6 transition-all duration-500 $`}
+        className={`2xl:container mx-auto relative z-50 px-6 md:px-10 lg:px-16 py-3 md:py-6 transition-all duration-500 $ ${isMobileMenuOpen? "w-full !fixed top-0" : ""}`}
       >
-        <div className="flex items-center justify-between">
+        <div className={`flex items-center justify-between`}>
           {/* LOGO */}
           <motion.a
             href="/"
