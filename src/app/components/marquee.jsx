@@ -19,9 +19,9 @@ export default function FastMarquee({
       className={className}
     >
       {items.map((item, idx) => (
-        <span key={idx} className="mx-6">
-          <span dangerouslySetInnerHTML={{ __html: item }} />
-        </span>
+        <div key={idx} className="mx-8">
+          {item}
+        </div>
       ))}
     </Marquee>
   );
