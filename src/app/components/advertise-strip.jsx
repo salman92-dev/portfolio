@@ -23,12 +23,12 @@ const PlusIcon = () => (
 );
 
 const item = [
-    <span className="hover:text-[#9f8be7] transition-colors duration-500 flex items-center gap-2" key="brand"><PlusIcon /> Your Brand </span>,
-    <span className="hover:text-[#9f8be7] transition-colors duration-500 flex items-center gap-2" key="story"><PlusIcon /> Your Story </span>,
-    <span className="hover:text-[#9f8be7] transition-colors duration-500 flex items-center gap-2" key="future"><PlusIcon /> Your Future </span>,
-    <span className="hover:text-[#9f8be7] transition-colors duration-500 flex items-center gap-2" key="world"><PlusIcon /> Your World </span>,
-    <span className="hover:text-[#9f8be7] transition-colors duration-500 flex items-center gap-2" key="vision"><PlusIcon /> Your Vision  </span>,
-    <span className="hover:text-[#9f8be7] transition-colors duration-500 flex items-center gap-2" key="dream"><PlusIcon /> Your Dream  </span>,
+    <span className="hover:text-black/50 text-[#9f8be7] transition-colors duration-500 flex items-center gap-2" key="brand"><PlusIcon /> Your Brand </span>,
+    <span className="hover:text-black/50 text-[#9f8be7] transition-colors duration-500 flex items-center gap-2" key="story"><PlusIcon /> Your Story </span>,
+    <span className="hover:text-black/50 text-[#9f8be7] transition-colors duration-500 flex items-center gap-2" key="future"><PlusIcon /> Your Future </span>,
+    <span className="hover:text-black/50 text-[#9f8be7] transition-colors duration-500 flex items-center gap-2" key="world"><PlusIcon /> Your World </span>,
+    <span className="hover:text-black/50 text-[#9f8be7] transition-colors duration-500 flex items-center gap-2" key="vision"><PlusIcon /> Your Vision  </span>,
+    <span className="hover:text-black/50 text-[#9f8be7] transition-colors duration-500 flex items-center gap-2" key="dream"><PlusIcon /> Your Dream  </span>,
 ]
 
 
