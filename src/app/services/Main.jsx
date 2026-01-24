@@ -4,7 +4,7 @@ import TextType from "../components/TextTyping";
 const Main = () => {
     return (
         <>
-            <section className="2xl:container mx-auto px-6 md:px-12 max-w-8xl pt-24 md:pt-32 relative">
+            <section className="2xl:container mx-auto px-6 md:px-12 max-w-8xl pt-24 md:pt-32 relative mb-16 md:mb-24">
                     <motion.div 
                     className="relative flex flex-col md:flex-row items-start gap-8 md:gap-12">
                         <div className="w-full md:w-[15%] h-auto md:sticky top-30">
@@ -40,13 +40,16 @@ const Main = () => {
                                 ease: [0.22, 1, 0.36, 1]
                                 }}
                             >
-                                <TextType
+                                {/* <TextType
                                 cursorCharacter='|'
                                 text={["New standards in digital excellence"]}
                                 typingSpeed={80}
                                 cursorClassName="text-[#9f8be7]"
                                 className="text-4xl md:text-5xl lg:text-6xl xl:text-8xl funnel font-bold text-gray-900"
-                                />
+                                /> */}
+                                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-8xl funnel font-bold text-gray-900">
+                                    New standards in digital excellence
+                                </h1>
                             </motion.div>
 
                             <div className="text-black/80 text-2xl md:text-2xl mt-12 space-y-8">

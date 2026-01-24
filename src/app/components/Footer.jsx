@@ -25,7 +25,7 @@ export default function Footer() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{once : true}}
         >
-            Salman
+            salman
         </motion.h3>
       <motion.div
         variants={container}

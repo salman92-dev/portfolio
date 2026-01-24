@@ -1,5 +1,5 @@
 "use client"
-import { motion } from "framer-motion";
+import { motion, spring } from "framer-motion";
 import FadeText2 from "./Fadetext2";
 const Contact = () => {
     return (
@@ -24,12 +24,18 @@ const Contact = () => {
                 <FadeText2 text="I'm always excited to collaborate on new projects or discuss potential opportunities. Whether you have a question, a project idea, or just want to say hello, feel free to reach out!" 
                 className="text-xl tracking-[1px] leading-[150%] md:text-2xl funnel text-black mb-12"
                 />
-                <a 
-                    href="mailto:salman@example.com"
+                <motion.a 
+                whileHover={{rotate:-5, scale:1.1}}
+                transition={{
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 10,
+                }}
+                    href="mailto:contact@salmanlabs.online"
                     className="inline-block px-8 text-2xl syne py-5 bg-[#ddf160] text-black rounded-full font-medium transition-colors duration-300"
                 >
                     Get in Touch
-                </a>
+                </motion.a>
             </div>
         </section>
     );
