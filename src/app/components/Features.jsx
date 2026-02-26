@@ -35,9 +35,9 @@ export default function FeaturesSection() {
           </div>
 
           <p className="mt-8 text-base md:text-xl funnel text-black/60 max-w-xl leading-relaxed">
-            Rayo template packed with smooth animations, modern design tools
-            and clean code. {`It's`} a flexible, future-proof template {`that's`} easy
-            to customize and a joy to use.
+            A collection of thoughtfully engineered features combining modern UI, smooth animations, 
+            and robust development practices. Built for speed, flexibility, and effortless customization 
+            using the latest web technologies.
           </p>
         </motion.div>
 

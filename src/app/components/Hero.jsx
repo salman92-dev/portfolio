@@ -35,6 +35,7 @@ const Hero = () => {
             src="/images/heart.webp"
             alt=""
             className="w-full h-auto drop-shadow-2xl"
+            data-cursor="image"
             // entrance animation
             initial={{ opacity: 0, rotate: 10 }}
             animate={{
@@ -105,7 +106,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h1 className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-black syne leading-none">
+            <h1 className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-black syne leading-none" data-cursor="label">
               Make
             </h1>
             <FastMarquee items={marqueeItems} speed={250} direction="left" className='max-sm:rotate-[-3deg] overflow-hidden max-w-3xl text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white rounded-full leading-none syne px-4 md:px-8 py-2 text-background bg-[#9f8be7] ' />
